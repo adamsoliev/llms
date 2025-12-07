@@ -42,18 +42,21 @@ I'll share code, logs, and observations as we go. Treat this as a conversation, 
 ### <a id="llm-as-editor" href="#table-of-contents">LLM as editor</a>
 
 ```
-Review this piece for final polish. The structure and argument are set.
+I think this is ready for final polish—you be the judge.
 
-Focus on:
-- Awkward phrasing or sentences that require re-reading
-- Word-level precision: vague words, repeated words in close proximity, hedging that weakens claims
-- Tonal inconsistencies or shifts in register
-- Transitions that feel abrupt or mechanical
-- Cutting anything that doesn't earn its place
+Review and flag issues at each level:
 
-Do not restructure, reframe the argument, or add content. Preserve my voice.
+**Argument:** Central claim clear? Supporting points hold up? Counter-arguments steelmanned, not strawmanned? Easy rebuttals I'm missing?
 
-Make edits inline with brief marginal notes only where the change isn't self-explanatory.
+**Structure:** Logical order? Anything redundant, misplaced, or burying the lede?
+
+**Sentence-level:** Awkward phrasing, vague words, repetition, weak hedging, abrupt transitions, anything that doesn't earn its place.
+
+**Voice target:** Senior engineer sharing notes with peers. Direct imperatives, dense tables over prose, unhedged recommendations, assumes fluency, signal over narrative. Flag drift.
+
+If the argument needs work, say so before nitpicking commas.
+
+Preserve my voice. Make edits inline with brief marginal notes where useful.
 ```
 
 ### <a id="llm-as-ai-code-slop-cleaner" href="#table-of-contents">LLM as AI code slop cleaner [^1]</a>
