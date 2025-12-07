@@ -41,34 +41,25 @@ COPY-PASTE here the entire question & solution from the sources above (bytebyteg
 ```
 
 
-### <a id="personalized-learning-system" href="#table-of-contents">Personalized Learning System [^3][^4]</a>
+### <a id="personalized-learning-system" href="#table-of-contents">Personalized Learning System [^3] [^4]</a>
 
 ```
-# Role
-AI Learning System Architect
+Design a bespoke learning system using the "Math Academy Way" (https://www.justinmath.com/files/the-math-academy-way.pdf).
 
-# Instructions
-You are an AI assistant tasked with designing a bespoke learning system. The user will provide you with a {topic} they wish to master, a {concrete outcome} they aim to achieve through this mastery, and potentially some {concrete relevant resources} they are already aware of.
+Core Components:
+- Break down {topic} into granular concepts with dependencies
+- Build a dependency graph where prerequisites unlock new learning units
+- Define practical exercises (projects, blog posts, presentations) that demonstrate mastery
+- Map learner states (novice, competent, blocked, ready) with observable transition triggers
+- Integrate provided resources and discover new ones mapped to graph units
+- Create an iterative navigation process that adapts as understanding evolves
 
-Your core task is to generate a comprehensive learning system modeled on the principles of the "Math Academy Way", outlined in https://www.justinmath.com/files/the-math-academy-way.pdf. This involves:
+Inputs:
+<topic></topic>
+<concrete outcome></concrete outcome>
+<concrete relevant resources></concrete relevant resources>
 
-- Deconstructing the Topic: Breaking down the {topic} into a granular, interconnected network of concepts and skills.
-- Developing a Dependency Graph: Structuring these concepts and skills into a dependency graph, where mastery of prerequisites unlocks subsequent learning units. A key challenge will be to articulate this graph for {topic}, especially if it's not inherently structured like mathematics or if its dependency pathways are not well-documented. Your approach should allow for this graph to be initially hypothesized and then refined by the learner.
-- Designing "Exercises": Defining what constitutes an "exercise" or "practice" for each learning unit. These exercises are the primary means by which the learner demonstrates mastery. For {topic}, these might be demoable practical projects, problem-solving tasks, analytical blog posts, presentations, or other application-focused activities rather than traditional problem sets. Importantly, bias towards the ones that can catch an eye of people in the industry.
-- Defining Learner States and Triggers: Identifying key "internal states" of the learner (e.g., "novice in X," "competent in Y," "integrating Z," "blocked on A," "ready for B"). Crucially, you must define specific, observable "triggers" that cause transitions between these states (e.g., successful completion of a defined set of exercises, failure rates, time spent, insights gained, completion of milestone projects).
-- Resource Integration: Strategically incorporating the user-provided {concrete relevant resources} and suggesting methods to discover and integrate other valuable public resources into the learning path, mapping them to specific units in the dependency graph.
-- Iterative Learning Process: Outlining a process for the learner to navigate this system, get feedback, and adapt their path, especially given that the dependency graph for {topic} might be an evolving discovery.
-- You must go deep into how these principles apply specifically to the user's chosen {topic}, ensuring the generated system is actionable and tailored to achieving their {concrete outcome}. Pay special attention to the dynamic nature of learning and how the system can accommodate the learner's evolving understanding and the potential for the dependency graph itself to be a learning outcome.
-
-# User
-<topic>
-</topic>
-
-<concrete outcome>
-</concrete outcome>
-
-<concrete relevant resources>
-</concrete relevant resources>
+Focus on industry-relevant, demonstrable outcomes tailored to the specific topic and goal.
 ```
 
 ### <a id="references" href="#table-of-contents">References</a>
