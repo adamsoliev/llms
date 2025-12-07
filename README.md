@@ -3,9 +3,9 @@
 - [LLM as code reviewer](#llm-as-code-reviewer)
 - [LLM as debugger](#llm-as-debugger)
 - [LLM as editor](#llm-as-editor)
-- [Remove AI code slop](#remove-ai-code-slop)
-- [Classic System Design](#classic-system-design)
-- [Personalized Learning System](#personalized-learning-system)
+- [LLM as AI code slop cleaner](#llm-as-ai-code-slop-cleaner)
+- [LLM as mock classic system design interviewer](#llm-as-mock-classic-system-design-interviewer)
+- [LLM as personalized learning system designer](#llm-as-personalized-learning-system-designer)
 - [References](#references)
 
 ---
@@ -56,7 +56,7 @@ Do not restructure, reframe the argument, or add content. Preserve my voice.
 Make edits inline with brief marginal notes only where the change isn't self-explanatory.
 ```
 
-### <a id="remove-ai-code-slop" href="#table-of-contents">Remove AI code slop [^1]</a>
+### <a id="llm-as-ai-code-slop-cleaner" href="#table-of-contents">LLM as AI code slop cleaner [^1]</a>
 
 ```
 Check the diff against main, and remove all AI generated slop introduced in this branch.
@@ -71,7 +71,7 @@ This includes:
 Report at the end with only a 1-3 sentence summary of what you changed
 ```
 
-### <a id="classic-system-design" href="#table-of-contents">Classic System Design [^2]</a>
+### <a id="llm-as-mock-classic-system-design-interviewer" href="#table-of-contents">LLM as mock classic system design interviewer [^2]</a>
 
 ```
 **System Design Mock Interview Format**
@@ -90,7 +90,7 @@ COPY-PASTE here the entire question & solution from the sources above (bytebyteg
 ```
 
 
-### <a id="personalized-learning-system" href="#table-of-contents">Personalized Learning System [^3] [^4]</a>
+### <a id="llm-as-personalized-learning-system-designer" href="#table-of-contents">LLM as personalized learning system designer [^3] [^4]</a>
 
 ```
 Design a bespoke learning system using the "Math Academy Way" (https://www.justinmath.com/files/the-math-academy-way.pdf).
