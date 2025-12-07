@@ -1,11 +1,60 @@
 ### Table of Contents
 
+- [LLM as code reviewer](#llm-as-code-reviewer)
+- [LLM as debugger](#llm-as-debugger)
+- [LLM as editor](#llm-as-editor)
 - [Remove AI code slop](#remove-ai-code-slop)
 - [Classic System Design](#classic-system-design)
 - [Personalized Learning System](#personalized-learning-system)
 - [References](#references)
 
 ---
+
+### <a id="llm-as-code-reviewer" href="#table-of-contents">LLM as code reviewer</a>
+
+```
+Review this diff as a senior engineer on the team.
+
+Focus on:
+- Bugs or performance issues
+- Edge cases and error handling gaps
+- Abstractions that will age poorly or leak
+- Tests that don't actually test the interesting behavior
+
+Skip: style nitpicks, naming bikesheds, suggestions that are "nice to have." If the code is fine, say so briefly.
+```
+
+
+### <a id="llm-as-debugger" href="#table-of-contents">LLM as debugger</a>
+
+```
+Help me debug this issue. Don't guess at solutions immediately.
+
+Process:
+1. Ask clarifying questions until you understand the expected vs actual behavior
+2. Help me form hypotheses ranked by likelihood
+3. Suggest the smallest diagnostic step that would rule out or confirm each hypothesis
+4. Only after we've localized the problem, discuss fixes
+
+I'll share code, logs, and observations as we go. Treat this as a conversation, not a one-shot answer.
+```
+
+### <a id="llm-as-editor" href="#table-of-contents">LLM as editor</a>
+
+```
+Review this piece for final polish. The structure and argument are set.
+
+Focus on:
+- Awkward phrasing or sentences that require re-reading
+- Word-level precision: vague words, repeated words in close proximity, hedging that weakens claims
+- Tonal inconsistencies or shifts in register
+- Transitions that feel abrupt or mechanical
+- Cutting anything that doesn't earn its place
+
+Do not restructure, reframe the argument, or add content. Preserve my voice.
+
+Make edits inline with brief marginal notes only where the change isn't self-explanatory.
+```
 
 ### <a id="remove-ai-code-slop" href="#table-of-contents">Remove AI code slop [^1]</a>
 
