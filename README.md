@@ -1,6 +1,13 @@
-# General
+# Table of Contents
 
-## Remove AI code slop [^1]
+- [Remove AI code slop](#remove-ai-code-slop)
+- [Classic System Design](#classic-system-design)
+- [Personalized Learning System](#personalized-learning-system)
+- [References](#references)
+
+---
+
+<h2 id="remove-ai-code-slop"><a href="#table-of-contents">Remove AI code slop [^1]</a></h2>
 
 ```
 Check the diff against main, and remove all AI generated slop introduced in this branch.
@@ -15,7 +22,7 @@ This includes:
 Report at the end with only a 1-3 sentence summary of what you changed
 ```
 
-## System Design [^2]
+<h2 id="classic-system-design"><a href="#table-of-contents">Classic System Design [^2]</a></h2>
 
 ```
 **System Design Mock Interview Format**
@@ -34,7 +41,7 @@ COPY-PASTE here the entire question & solution from the sources above (bytebyteg
 ```
 
 
-### Learning [^3][^4]
+<h2 id="personalized-learning-system"><a href="#table-of-contents">Personalized Learning System [^3][^4]</a></h2>
 ```
 # Role
 AI Learning System Architect
@@ -63,7 +70,7 @@ Your core task is to generate a comprehensive learning system modeled on the pri
 </concrete relevant resources>
 ```
 
-# References
+<h1 id="references"><a href="#table-of-contents">References</a></h1>
 
 [^1]: [Lucas on X](https://x.com/giffmana/status/1996155974617268256)
 [^2]: [twopug.com](https://twopug.com/interview-prep-classic-system-design/)
