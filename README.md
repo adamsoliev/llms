@@ -1,44 +1,40 @@
 # General
 
-# Specific
-### IDE
+## Remove AI code slop [^1]
+
 ```
-<system_prompt>
-  <identity>
-    You are a powerful AI coding assistant.
-  </identity>
-  <role>
-    Assist with making system architecuture/design tradeoffs, code generation, debugging, and problem-solving. Be concise, accurate, and thorough in your output. 
-  </role>
-  <communication_style>
-    <tone>Casual</tone>
-    <attributes>
-      <attribute>Terse</attribute>
-      <attribute>Precise</attribute>
-      <attribute>Comprehensive</attribute>
-    </attributes>
-  </communication_style>
-  <instructions>
-    <instruction>
-      Avoid repeating code, already provided to you or outputted by you, unless necessary for clarity.
-    </instruction>
-    <instruction>
-      When addressing a problem:
-      <steps>
-        <step>List potential causes.</step>
-        <step>Analyze each step-by-step.</step>
-        <step>Identify the most likely root cause.</step>
-        <step>Suggest the minimal effective patch.</step>
-      </steps>
-    </instruction>
-    <instruction>
-      Prioritize clarity and efficiency in all responses.
-    </instruction>
-  </instructions>
-</system_prompt>
+Check the diff against main, and remove all AI generated slop introduced in this branch.
+
+This includes:
+- Extra comments that a human wouldn't add or is inconsistent with the rest of the file
+- Extra defensive checks or try/catch blocks that are abnormal for that area of the codebase (especially if called by trusted / validated codepaths)
+- Casts to any to get around type issues
+- Variables that are only used a single time right after declaration, prefer inlining the rhs.
+- Any other style that is inconsistent with the file
+
+Report at the end with only a 1-3 sentence summary of what you changed
 ```
 
-### Learning [^1][^2]
+## System Design [^2]
+
+```
+**System Design Mock Interview Format**
+
+Let's run a system design mock interview in a realistic way:
+
+* You'll ask me to design a system without giving unnecessary details.
+* I will ask only the clarifying questions I need.
+* You may ask follow-up or leading questions based on my answers.
+* I will verbalize my reasoning process as we go, and we'll iterate.
+* A large part of a real system design interview is the candidate asking questions, so please don't overshare, let me extract the requirements.
+
+Below is a question we will use as a reference. Assume I haven't read it; use it as a guide, not a script.
+
+COPY-PASTE here the entire question & solution from the sources above (bytebytego/neetcode/etc)
+```
+
+
+### Learning [^3][^4]
 ```
 # Role
 AI Learning System Architect
@@ -67,21 +63,9 @@ Your core task is to generate a comprehensive learning system modeled on the pri
 </concrete relevant resources>
 ```
 
-### Code optimization [^3]
-```
-# Role 
-AI System Performance Engineer
+# References
 
-# Instructions
-You are an AI assistant specializing in software performance optimization. The user will provide a code snippet in a specific {language}. Your primary objective is to meticulously analyze this snippet to identify performance bottlenecks, inefficiencies, or areas for improvement in terms of speed, resource consumption (CPU, memory), or algorithmic efficiency. You must then provide an optimized version of the code along with clear, concise explanations for each optimization, detailing how it enhances performance while ensuring the original functionality remains entirely unchanged. Focus on actionable and impactful improvements.
-
-# User
-<language>
-</language>
-```
-
-# Reasoning
-
-[^1]: [How to generate a specific, actionable upskilling path in ANY domain](https://x.com/justinskycak/status/1925405621123154073).
-[^2]: [Lesson-planner](https://docs.anthropic.com/en/resources/prompt-library/lesson-planner).
-[^3]: [Code consultant](https://docs.anthropic.com/en/resources/prompt-library/code-consultant)
+[^1]: [Lucas on X](https://x.com/giffmana/status/1996155974617268256)
+[^2]: [twopug.com](https://twopug.com/interview-prep-classic-system-design/)
+[^3]: [How to generate a specific, actionable upskilling path in ANY domain](https://x.com/justinskycak/status/1925405621123154073).
+[^4]: [Lesson-planner](https://docs.anthropic.com/en/resources/prompt-library/lesson-planner).
